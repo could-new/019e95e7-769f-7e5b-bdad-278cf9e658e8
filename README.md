@@ -2,6 +2,13 @@
 
 Aplikasi ini adalah Workbook Interaktif berbasis Flutter yang dirancang untuk membantu mahasiswa dan tenaga kesehatan dalam menganalisis interaksi obat pada pasien geriatri dengan polifarmasi, khususnya untuk kombinasi obat Hipertensi, ARV (Antiretroviral), dan TB (Tuberkulosis).
 
+## Fitur Utama (Struktur 4 Tab)
+Aplikasi ini sekarang memiliki 4 bagian utama yang saling terhubung untuk memberikan alur analisis klinis yang interaktif:
+1. **Input Pasien**: Halaman untuk memasukkan profil ringkas pasien lansia beserta daftar obat-obatan yang sedang dikonsumsi (pilih dari daftar Hipertensi, ARV, dan TB).
+2. **Database Interaksi**: Tabel lengkap yang berisi data farmakokinetik/farmakodinamik, jenis interaksi (Sinergis, Aditif, Antagonis), dan rujukan literatur klinis.
+3. **Dashboard Analisis**: Menampilkan hasil perhitungan dan pemindaian interaksi secara otomatis dari obat yang diinputkan pada tab pertama.
+4. **Manajemen Terapi**: Rekomendasi klinis yang spesifik untuk geriatri, memberikan saran penyesuaian dosis, pemantauan laboratorium, atau alternatif obat yang lebih aman.
+
 ## Teori Interaksi Obat
 Dalam farmakologi, interaksi obat dapat diklasifikasikan berdasarkan efek kombinasi obat:
 
@@ -9,20 +16,12 @@ Dalam farmakologi, interaksi obat dapat diklasifikasikan berdasarkan efek kombin
 2. **Aditif**: Interaksi di mana kombinasi dua obat menghasilkan efek yang sama dengan jumlah efek masing-masing obat jika diberikan sendiri-sendiri (1 + 1 = 2).
 3. **Antagonis**: Interaksi di mana satu obat mengurangi atau menetralkan efek obat lain (1 + 1 < 2).
 
-## Contoh Interaksi Obat (Hipertensi, ARV, TB)
-
-| Obat 1 | Obat 2 | Mekanisme Interaksi | Efek (S/A/Ant) | Rekomendasi Klinis |
-| :--- | :--- | :--- | :--- | :--- |
-| Rifampisin (TB) | Amlodipin (Hipertensi) | Rifampisin menginduksi enzim CYP3A4, mempercepat metabolisme Amlodipin. | Antagonis (Penurunan efikasi) | Pantau tekanan darah, mungkin perlu peningkatan dosis Amlodipin. |
-| Isoniazid (TB) | Efavirenz (ARV) | Keduanya berisiko menyebabkan hepatotoksisitas. | Aditif (Toksisitas) | Pantau ketat fungsi hati (SGOT/SGPT). |
-| Tenofovir (ARV) | Lisinopril (Hipertensi) | Keduanya dapat mempengaruhi fungsi ginjal. | Aditif (Nefrotoksisitas) | Pantau fungsi ginjal (kreatinin serum) secara rutin. |
-| Rifampisin (TB) | Lopinavir/Ritonavir (ARV) | Rifampisin sangat menurunkan kadar Lopinavir melalui induksi enzim hati. | Antagonis | Hindari penggunaan bersamaan atau gunakan dosis ARV yang disesuaikan/ganti regimen. |
-
 ## Referensi Jurnal (5 Tahun Terakhir)
 Aplikasi dan materi ini merujuk pada literatur medis dan farmasi terkait interaksi obat ARV, OAT (Obat Anti-Tuberkulosis), dan Antihipertensi:
 1. *Babadoko, A. A., et al. (2021). "Drug-drug interactions among HIV/TB co-infected patients." Journal of Pharmacy & Bioallied Sciences.*
 2. *Gengiah, S., et al. (2020). "Drug interactions between antiretrovirals and antituberculosis drugs: clinical considerations." Clinical Pharmacokinetics.*
 3. *Perhimpunan Dokter Spesialis Kardiovaskular Indonesia (PERKI). (2021). Pedoman Tatalaksana Hipertensi.* (Sebagai pedoman tata laksana penyerta).
+4. *Cerrone, M., et al. (2022). "Management of Drug-Drug Interactions Between Antiretroviral and Anti-Tuberculosis Drugs." Drugs - Springer.*
 
 > *Catatan: Data interaksi spesifik dapat diverifikasi lebih lanjut menggunakan database seperti Lexicomp atau Drugs.com.*
 
@@ -34,7 +33,7 @@ Aplikasi dan materi ini merujuk pada literatur medis dan farmasi terkait interak
 1. Pastikan Flutter SDK sudah terpasang.
 2. Clone repository ini.
 3. Jalankan `flutter pub get` untuk mengunduh dependensi.
-4. Jalankan aplikasi dengan `flutter run`.
+4. Jalankan aplikasi dengan `flutter run` di perangkat Mobile, Web, atau Desktop.
 
 ---
 ## Tentang CouldAI
